@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #FAF6EE !important; /* Warm premium Cream Gold base */
+    color: #0c2340 !important; /* Royal Blue text contrast */
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Luxury Royal Blue & Gold Custom utilities with Cream Gold enhancements */
+.glow-border-blue {
+  border: 1px solid rgba(197, 168, 80, 0.3) !important;
+  box-shadow: 0 4px 20px rgba(197, 168, 80, 0.08);
+  transition: all 0.3s ease;
+}
+
+.glow-border-blue:hover {
+  border-color: rgba(197, 168, 80, 0.6) !important;
+  box-shadow: 0 10px 30px rgba(197, 168, 80, 0.15);
+}
+
+.glow-text-cyan {
+  color: #0c2340 !important; /* Royal blue display */
+  text-shadow: none;
+}
+
+/* Neon Red Futuristic Glow Utilities */
+.glow-text-red {
+  color: #ff3333 !important;
+  text-shadow: 0 0 10px rgba(255, 51, 51, 0.7), 0 0 20px rgba(255, 51, 51, 0.3) !important;
+}
+
+.glow-border-red {
+  border: 1px solid rgba(255, 51, 51, 0.5) !important;
+  box-shadow: 0 0 12px rgba(255, 51, 51, 0.25) !important;
+  transition: all 0.3s ease;
+}
+
+.glow-border-red:hover {
+  border-color: rgba(255, 51, 51, 0.9) !important;
+  box-shadow: 0 0 20px rgba(255, 51, 51, 0.5) !important;
+}
+
+/* Stunning Animated Premium Royal Blue Button Utilities */
+.btn-warna-warni {
+  background: linear-gradient(135deg, #0c2340, #133360, #1c4a8a, #133360, #0c2340) !important;
+  background-size: 300% 300% !important;
+  animation: royal-blue-animation 8s ease infinite !important;
+  color: #c5a850 !important; /* Elegant gold text color */
+  font-weight: 800 !important;
+  letter-spacing: 0.05em !important;
+  border: 1px solid rgba(197, 168, 80, 0.45) !important; /* Premium gold border */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4) !important;
+  box-shadow: 0 4px 15px rgba(12, 35, 64, 0.25) !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-warna-warni:hover {
+  transform: translateY(-2px) scale(1.02) !important;
+  color: #fff2cc !important;
+  border-color: #c5a850 !important;
+  box-shadow: 0 8px 25px rgba(12, 35, 64, 0.4), 0 0 15px rgba(197, 168, 80, 0.3) !important;
+}
+
+@keyframes royal-blue-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glow-text-gold {
+  color: #b38e3f !important;
+  text-shadow: 0 1px 2px rgba(179, 142, 63, 0.1);
+}
+
+/* Royal pattern for background - Cream Gold Background */
+.bg-futuristic {
+  background-color: #FAF6EE !important;
+  background-image: radial-gradient(rgba(197, 168, 80, 0.15) 1px, transparent 1px) !important;
+  background-size: 24px 24px !important;
+}
+
+/* Premium card - Rich Cream Gold background, thin elegant gold/blue border */
+.glass-panel {
+  background: #FFFDF9 !important; /* Soft luxury pearlescent cream */
+  border: 1px solid rgba(197, 168, 80, 0.35) !important; /* Premium gold border */
+  box-shadow: 0 6px 24px rgba(12, 35, 64, 0.05) !important;
+}
+
+.glass-panel-heavy {
+  background: #FFFDF9 !important;
+  border: 2px solid #c5a850 !important; /* Rich gold border */
+  box-shadow: 0 8px 30px rgba(12, 35, 64, 0.1) !important;
+}
+
+/* Override standard white utility backgrounds to enforce the beautiful Cream Gold theme across entire app */
+.bg-white {
+  background-color: #FFFDF9 !important; /* Pearl cream white */
+}
+
+.bg-white\/80 {
+  background-color: rgba(255, 253, 249, 0.85) !important; /* Frosted pearl cream */
+}
+
+.bg-slate-50 {
+  background-color: #FAF5E6 !important; /* Linen cream gold contrast */
+}
+
+.bg-slate-100 {
+  background-color: #F4EEDC !important; /* Slightly darker linen accent */
+}
+
+.hover\:bg-slate-50:hover {
+  background-color: #F7F1E1 !important;
+}
+
+/* Modal and overlay backgrounds */
+.bg-black\/60 {
+  background-color: rgba(12, 35, 64, 0.65) !important; /* Royal Blue transparent overlay instead of cold black */
+}
+
+/* Light scanning line animation customized for gold/blue transition */
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Scanline effect removed to ensure absolute click responsiveness in iframe viewports */
+.scanline-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Custom Scrollbar for premium Royal Blue & Gold aesthetics */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF6EE !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0c2340 !important;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a850 !important;
+}
